@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/fontawesome/css/regular.css">
 </head>
 
-<body class="bg-penn-blue pt-10 w-full h-full text-white flex justify-center items-center content-center box-border">
+<body class="bg-penn-blue pt-5 w-full h-full text-white flex justify-center items-center content-center box-border">
   <main class="bg-phthalo-blue w-full h-full max-w-5xl rounded-3xl p-8 flex flex-col">
     <h1 class="text-4xl font-Josefin relative right-[4px] mb-12">BeRelax</h1>
     <section class="h-full flex flex-row gap-8">
@@ -21,7 +21,7 @@
           </button>
         </div>
         <!-- List of musics -->
-        <ul id="preset-musics" class="flex flex-col gap-5">
+        <ul id="preset-musics" class="flex flex-col gap-8">
           <!-- First Element -->
           <li class="h-[8.5rem] relative text-center group hover:cursor-pointer">
             <img src="assets/images/ocean_img.jpg" alt="ocean sounds" class="rounded-xl w-full h-full" />
@@ -55,13 +55,18 @@
            flex-row w-full h-auto">
           <!-- Here start controlls buttons -->
           <section class="flex flex-col w-[40%] p-4 pb-0 gap-5">
-            <h3 class="font-Kanit font-bold">Controller</h3>
+
+            <div class="flex flex-row items-center justify-between">
+              <h3 class="font-Kanit font-bold">Controller</h3>
+              <i class="fas fa-gear"></i>
+            </div>
+            
             <div class="flex flex-row items-center justify-around">
               <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-water"></i></div>
               <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-house-tsunami"></i></div>
               <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-wind"></i></div>
             </div>
-            <div class="flex flex-row gap-6 align-middle justify-center items-center w-full mt-2">
+            <div class="flex flex-row gap-6 align-middle justify-center items-center w-full mt-3">
               <button class="bg-red-600 py-2.5 px-3.5 rounded-full w-auto h-auto"><i class="fa-solid fa-stop"></i></button>
               <button class="bg-cornflower-blue rounded-full py-[16px] px-[22px]"><i class="fa-solid fa-play text-lg"></i></button>
               <button class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col">30
@@ -69,7 +74,7 @@
               </button>
               </div>
               <div class="w-auto h-auto">
-                <!-- code for progress bar with tailwind classes -->
+                <!-- code for progress bar that show time-->
                 <div class="w-full h-[6px] bg-penn-blue-5 rounded-full overflow-hidden">
                   <div class="w-[30%] bg-french-rose h-full rounded-full"></div>
                 </div>
@@ -77,13 +82,44 @@
               <p class="text-[9px]">Ocean sounds have a calming effect on the mind and body, reducing stress and anxiety by slowing down heart rate and breathing, creating a peaceful ambiance for relaxation.</p>
           </section>
           <!-- Sounds controls -->
-          <section class="bg-violet-800 w-[60%] flex flex-col p-4">
-            <h3 class="font-Kanit font-bold">Add Nature sounds</h3>
+          <section class="w-[60%] flex flex-col p-4 px-8 pb-0">
+            <div class="flex flex-row items-center justify-between">
+              <h3 class="font-Kanit font-bold">Volume</h3>
+              <i class="fas fa-music"></i>
+            </div>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <!-- First sound -->
+              <li class="w-full h-auto flex flex-row py-3 gap-2">
+                <div class="w-12 h-11 rounded-full bg-cover bg-center bg-no-repeat" style="background-image: url(assets/images/ocean_img.jpg);""></div>
+                <div class="w-full flex flex-col gap-1">
+                  <p class="text-8 font-Kanit">Ocean</p>
+                  <input type="range" name="" id="" min="0" max="100" value="100" step="10" class="appearance-none bg-transparent cursor-pointer w-full">
+                </div>
+              </li>
+              <!-- Second sound -->
+              <li class="w-full h-auto flex flex-row py-3 gap-2">
+                <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-water"></i></div>
+                <div class="w-full flex flex-col gap-1">
+                  <p class="text-8 font-Kanit">Ocean</p>
+                  <input type="range" name="" id="" min="0" max="100" value="100" step="10" class="appearance-none bg-transparent cursor-pointer w-full">
+                </div>
+              </li>
+              <!-- Third sound -->
+              <li class="w-full h-auto flex flex-row py-3 gap-2">
+                <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-house-tsunami"></i></div>
+                <div class="w-full flex flex-col gap-1">
+                  <p class="text-8 font-Kanit">Ocean</p>
+                  <input type="range" name="" id="" min="0" max="100" value="100" step="10" class="appearance-none bg-transparent cursor-pointer w-full">
+                </div>
+              </li>
+              <!-- Fourth sound -->
+              <li class="w-full h-auto flex flex-row py-3 gap-2">
+                <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-wind"></i></div>
+                <div class="w-full flex flex-col gap-1">
+                  <p class="text-8 font-Kanit">Ocean</p>
+                  <input type="range" name="" id="" min="0" max="100" value="100" step="10" class="appearance-none bg-transparent cursor-pointer w-full">
+                </div>
+              </li>
             </ul>
           </section>
         </div>
