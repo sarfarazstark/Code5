@@ -556,26 +556,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-3\.5{
-  margin-bottom: 0.875rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -592,8 +572,8 @@ video {
   display: inline-flex;
 }
 
-.h-10{
-  height: 2.5rem;
+.h-11{
+  height: 2.75rem;
 }
 
 .h-52{
@@ -616,12 +596,8 @@ video {
   height: 100%;
 }
 
-.h-11{
-  height: 2.75rem;
-}
-
-.w-11{
-  width: 2.75rem;
+.w-12{
+  width: 3rem;
 }
 
 .w-2\/5{
@@ -650,10 +626,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .max-w-5xl{
@@ -733,10 +705,6 @@ video {
   gap: 2rem;
 }
 
-.gap-7{
-  gap: 1.75rem;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -794,11 +762,6 @@ video {
   background-color: transparent;
 }
 
-.bg-violet-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -813,10 +776,6 @@ video {
 
 .fill-blue-600{
   fill: #2563eb;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-3{
@@ -841,6 +800,11 @@ video {
   padding-right: 0.875rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[22px\]{
   padding-left: 22px;
   padding-right: 22px;
@@ -856,42 +820,18 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.py-\[16px\]{
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.pb-0{
-  padding-bottom: 0px;
+.py-\[16px\]{
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.pt-10{
-  padding-top: 2.5rem;
+.pb-0{
+  padding-bottom: 0px;
 }
 
 .pt-5{
@@ -939,6 +879,19 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[7px\]{
+  font-size: 7px;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
 }
 
 .font-bold{
