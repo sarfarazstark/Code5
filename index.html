@@ -1,106 +1,121 @@
 <!DOCTYPE html>
-<html  class="scroll-smooth">
-  <head>
-    <title>BeRelax - Code5</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
-  </head>
-  <body
-    class="bg-penn-blue p-10 w-screen h-screen text-white flex justify-center box-border"
-  >
-    <main
-      class="bg-phthalo-blue w-full h-full max-w-5xl rounded-3xl p-8 flex flex-col"
-    >
-      <h1 class="text-4xl font-Josefin relative right-[4px] mb-12">BeRelax</h1>
-      <section class="h-full flex flex-row gap-8">
-        <div class="w-2/5 min-w-3/8 overflow-hidden">
-          <div class="flex flex-row justify-between mb-9">
-            <h3 class="font-bold font-Kanit">Relax Sounds</h3>
-            <button
-              class="inline-flex items-center text-md font-bold text-palatinate-blue"
-            >
-              <img
-                src="assets/images/search-icon.svg"
-                alt="Search icon to search"
-                class="w-4 mr-2 -scale-x-100 fill-blue-600"
-              />Search
-            </button>
-          </div>
-          <ul id="preset-musics" class="flex flex-col gap-5">
-            <!-- First Element -->
-            <li class="relative text-center group hover:cursor-pointer">
-              <img
-                src="assets/images/ocean_img.jpg"
-                alt="ocean sounds"
-                class="rounded-xl"
-              />
-              <div class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
-                <img
-                  src="assets/images/play-1003-svgrepo-com.svg"
-                  alt="play"
-                  class="w-6 opacity-0 transition group-hover:opacity-100 ease-in-out duration-700"
-                />
-              </div>
-            </li>
-            <!-- Second Element -->
-            <li class="relative text-center group hover:cursor-pointer">
-              <img
-                src="assets/images/field.jpg"
-                alt="ocean sounds"
-                class="rounded-xl"
-              />
-              <div class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
-                <img
-                  src="assets/images/play-1003-svgrepo-com.svg"
-                  alt="play"
-                  class="w-6 opacity-0 transition group-hover:opacity-100 ease-in-out duration-700"
-                />
-              </div>
-            </li>
-            <!-- Third Element -->
-            <li class="relative text-center group hover:cursor-pointer">
-              <img
-                src="assets/images/jungle.jpg"
-                alt="ocean sounds"
-                class="rounded-xl"
-              />
-              <div class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
-                <img
-                  src="assets/images/play-1003-svgrepo-com.svg"
-                  alt="play"
-                  class="w-6 opacity-0 transition group-hover:opacity-100 ease-in-out duration-700"
-                />
-              </div>
-            </li>
-          </ul>
+<html class="scroll-smooth">
+
+<head>
+  <title>BeRelax - Code5</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/regular.css">
+</head>
+
+<body class="bg-penn-blue pt-10 w-full h-full text-white flex justify-center items-center content-center box-border">
+  <main class="bg-phthalo-blue w-full h-full max-w-5xl rounded-3xl p-8 flex flex-col">
+    <h1 class="text-4xl font-Josefin relative right-[4px] mb-12">BeRelax</h1>
+    <section class="h-full flex flex-row gap-8">
+      <div class="w-2/5 min-w-3/8 overflow-hidden">
+        <div class="flex flex-row justify-between mb-9">
+          <h3 class="font-bold font-Kanit">Relax Sounds</h3>
+          <button class="inline-flex items-center text-md font-bold text-palatinate-blue">
+            <img src="assets/images/search-icon.svg" alt="Search icon to search"
+              class="w-4 mr-2 -scale-x-100 fill-blue-600" />Search
+          </button>
         </div>
-        <div class="bg-indigo-500 w-full p-4">
-          <img src="assets/images/ocean_img.jpg" alt="cover" class="rounded-2xl h-52 w-full">
-          <h3>Controller</h3>
-          <button class="bg-red-600 rounded-full p-2"><img class="w-5" src="assets/images/stop-svgrepo-com.svg" alt=""></button>
-          <button class="bg-cornflower-blue rounded-full p-4"><img class="w-5" src="assets/images/play-1003-svgrepo-com.svg" alt=""></button>
-            <p class="text-lg flex flex-col">30 <span class="text-sm">min</span></p>
+        <!-- List of musics -->
+        <ul id="preset-musics" class="flex flex-col gap-5">
+          <!-- First Element -->
+          <li class="h-[8.5rem] relative text-center group hover:cursor-pointer">
+            <img src="assets/images/ocean_img.jpg" alt="ocean sounds" class="rounded-xl w-full h-full" />
+            <div
+              class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+          <!-- Second Element -->
+          <li class="h-[8.5rem] relative text-center group hover:cursor-pointer">
+            <img src="assets/images/field-min.jpg" alt="ocean sounds" class="rounded-xl w-full h-full" />
+            <div
+              class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+          <!-- Third Element -->
+          <li class="h-[8.5rem] relative text-center group hover:cursor-pointer">
+            <img src="assets/images/jungle-min.jpg" alt="ocean sounds" class="rounded-xl w-full h-full" />
+            <div
+              class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Music dashboard -->
+      <div class=" w-full p-4 pb-0">
+        <img src="assets/images/ocean_img.jpg" alt="cover" class="rounded-2xl h-52 w-full" />
+        <div class="flex
+           flex-row w-full h-auto">
+          <!-- Here start controlls buttons -->
+          <section class="flex flex-col w-[40%] p-4 pb-0 gap-5">
+            <h3 class="font-Kanit font-bold">Controller</h3>
+            <div class="flex flex-row items-center justify-around">
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-water"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-house-tsunami"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-wind"></i></div>
+            </div>
+            <div class="flex flex-row gap-6 align-middle justify-center items-center w-full mt-2">
+              <button class="bg-red-600 py-2.5 px-3.5 rounded-full w-auto h-auto"><i class="fa-solid fa-stop"></i></button>
+              <button class="bg-cornflower-blue rounded-full py-[16px] px-[22px]"><i class="fa-solid fa-play text-lg"></i></button>
+              <button class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col">30
+                <span class="text-[10px]">min</span>
+              </button>
+              </div>
+              <div class="w-auto h-auto">
+                <!-- code for progress bar with tailwind classes -->
+                <div class="w-full h-[6px] bg-penn-blue-5 rounded-full overflow-hidden">
+                  <div class="w-[30%] bg-french-rose h-full rounded-full"></div>
+                </div>
+              </div>
+              <p class="text-[9px]">Ocean sounds have a calming effect on the mind and body, reducing stress and anxiety by slowing down heart rate and breathing, creating a peaceful ambiance for relaxation.</p>
+          </section>
+          <!-- Sounds controls -->
+          <section class="bg-violet-800 w-[60%] flex flex-col p-4">
+            <h3 class="font-Kanit font-bold">Add Nature sounds</h3>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </section>
         </div>
-      </section>
-    </main>
-    <script>
-      const presetMusics = document.getElementById("preset-musics");
-      const musics = [
-        {
-          name: "Ocean",
-          img: "assets/images/ocean_img.jpg",
-          audio: "assets/sounds/ocean.mp3",
-        },
-        {
-          name: "Field",
-          img: "assets/images/field.jpg",
-          audio: "assets/sounds/field.mp3",
-        },
-        {
-          name: "Jungle",
-          img: "assets/images/jungle.jpg",
-          audio: "assets/sounds/jungle.mp3",
-        },
-      ];
-    </script>
-  </body>
+        <audio>
+          <source src="assets/ocean.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const presetMusics = document.getElementById("preset-musics");
+    const musics = [
+      {
+        name: "Ocean",
+        img: "assets/images/ocean_img.jpg",
+        audio: "assets/sounds/ocean.mp3",
+      },
+      {
+        name: "Field",
+        img: "assets/images/field.jpg",
+        audio: "assets/sounds/field.mp3",
+      },
+      {
+        name: "Jungle",
+        img: "assets/images/jungle.jpg",
+        audio: "assets/sounds/jungle.mp3",
+      },
+    ];
+  </script>
+  <script src="assets/fontawesome/js/fontawesome.js"></script>
+  <script src="assets/fontawesome/js/solid.js"></script>
+</body>
+
 </html>
