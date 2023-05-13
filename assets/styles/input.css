@@ -69,3 +69,18 @@ input[type="range"]:focus::-moz-range-thumb {
  outline: 3px solid rgba(7, 8, 54, 0.511);
  outline-offset: 0.125rem; 
 }
+
+#preset-musics::-webkit-scrollbar {
+  width: 8px;
+}
+
+#preset-musics::-webkit-scrollbar-track {
+  margin-right: 12rem;
+  background-color: rgba(7, 8, 54, 0.511);
+  border-radius: 10px;
+}
+
+#preset-musics::-webkit-scrollbar-thumb {
+  background-color: hsla(342, 100%, 62%, 1);
+  border-radius: 10px;
+}
