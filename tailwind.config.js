@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./assets/script.js"],
+  content: ["./index.html",
+            "./mobile.html",
+            "./assets/script.js"],
   theme: {
     extend: {
         colors: {
@@ -16,8 +18,8 @@ module.exports = {
           "Josefin": "Josefin Sans, sans-serif",
           "Kanit": "Kanit, sans-serif",
         },
-        right:{
-          '4px': '4px'
+        fontSize: {
+          "4r": "4rem",
         }
     },
   },

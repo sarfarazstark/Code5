@@ -12,10 +12,10 @@
 />
 </head>
 
-<body class="bg-penn-blue pt-5 w-full h-full text-white flex justify-center items-center content-center box-border">
-  <main class="wrapper bg-phthalo-blue w-full h-full max-w-5xl rounded-3xl p-8 flex flex-col">
+<body class="bg-penn-blue w-full h-screen text-white flex justify-center items-center content-center box-border">
+<main class="wrapper bg-phthalo-blue w-full h-[82%] max-w-5xl rounded-3xl p-9 flex flex-col">
     <div class="flex flex-row mb-6">
-    <h1 class="text-2xl font-Josefin bg-cornflower-blue p-4 rounded-lg">🌻 BeRelax - Code5</h1>
+    <h1 class="text-3xl leading-none font-Josefin rounded-lg">🌻 BeRelax</h1>
     </div>
     <section class="h-full flex flex-row gap-8">
       <div class="w-2/5 min-w-3/8">
@@ -28,18 +28,18 @@
         </div>
         <!-- ---------------------------------------------------------------- -->
         <!-- List of musics -->
-        <ul id="preset-musics" class="flex flex-col gap-8 h-[29rem] overflow-y-scroll">
+        <ul id="preset-musics" class="flex flex-col gap-8 h-[29.3rem] overflow-y-scroll">
           <!-- First Element -->
-          <li class="h-[8.5rem] relative text-center group hover:cursor-pointer mr-[8px]">
-            <img src="assets/images/ocean_img.jpg" alt="ocean sounds" class="rounded-xl w-full h-[8.5rem]" />
+          <li class="h-[8.5rem] relative text-center group hover:cursor-pointer mr-[8px] select-none" onclick="playMusic()">
+            <img src="assets/images/ocean_img.jpg" alt="ocean sounds" class="rounded-xl w-full h-[8.5rem]"/>
             <div
               class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
-              <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700" onclick="playMusic()"></i>
+              <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
             </div>
           </li>
           <!-- Second Element -->
           <li class="h-[8.5rem] relative text-center group hover:cursor-pointer mr-[8px]">
-            <img src="assets/images/field-min.jpg" alt="field sounds" class="rounded-xl w-full h-[8.5rem]" />
+            <img src="assets/images/field-min.jpg" alt="field sounds" class="rounded-xl w-full h-[8.5rem] select-none" />
             <div
               class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
               <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
@@ -47,7 +47,7 @@
           </li>
           <!-- Third Element -->
           <li class="h-[8.5rem] relative text-center group hover:cursor-pointer mr-[8px]">
-            <img src="assets/images/jungle-min.jpg" alt="jungle sounds" class="rounded-xl w-full h-[8.5rem]" />
+            <img src="assets/images/jungle-min.jpg" alt="jungle sounds" class="rounded-xl w-full h-[8.5rem] select-none" />
             <div
               class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
               <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
@@ -55,7 +55,7 @@
           </li>
           <!-- Fourth Element -->
           <li class="h-[8.5rem] relative text-center group hover:cursor-pointer mr-[8px]">
-            <img src="assets/images/rain.jpg" alt="rain sounds" class="rounded-xl w-full h-[8.5rem]" />
+            <img src="assets/images/rain.jpg" alt="rain sounds" class="rounded-xl w-full h-[8.5rem] select-none" />
             <div
               class="w-full rounded-xl h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
               <i class="fa-solid fa-play text-3xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
@@ -69,7 +69,7 @@
         <img src="assets/images/ocean_img.jpg" alt="cover" class="h-52 w-full p-4 rounded-3xl main-img" />
         <div class="flex
            flex-row w-full h-auto">
-          <!-- Here start controlls buttons -->
+          <!-- Here start all controls buttons -->
           <section class="flex flex-col w-[40%] p-4 pb-0 gap-5">
 
             <div class="flex flex-row items-center justify-between">
@@ -78,18 +78,18 @@
             </div>
 
             <div class="flex flex-row items-center justify-around">
-              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-water"></i></div>
-              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-house-tsunami"></i></div>
-              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i class="fa-solid fa-wind"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i data-music-icon="1" class="fa-solid fa-water"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i data-music-icon="2" class="fa-solid fa-house-tsunami"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-2.5 px-3.5"><i data-music-icon="3" class="fa-solid fa-wind"></i></div>
             </div>
 
-            <div class="flex flex-row gap-6 align-middle justify-center items-center w-full mt-3">
-              <button class="bg-red-600 py-2.5 px-3.5 rounded-full w-auto h-auto"><i
+            <div class="flex flex-row gap-6 align-middle justify-center items-center w-full">
+              <button class="bg-french-rose py-2.5 px-3.5 rounded-full w-auto h-auto"><i
                   class="fa-solid fa-stop"></i></button>
               <button class="bg-cornflower-blue rounded-full py-[16px] px-[22px]"><i
                   class="fa-solid fa-play text-lg"></i></button>
-              <button onclick="changeBreakTime()"
-                class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col"><span class="BREAK_TIME_IN_MINUTE">30</span>
+              <button onclick="showPopUp()"
+                class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col"><span class="BREAK_TIME_IN_MINUTE text-justify w-full">30</span>
                 <span class="text-[10px]">min</span>
               </button>
             </div>
@@ -101,7 +101,7 @@
                 <div class="w-[30%] bg-french-rose h-full rounded-full"></div>
               </div>
             </div>
-            <p class="text-[9px]">Ocean sounds have a calming effect on the mind and body, reducing stress and anxiety
+            <p class="text-[10px] details-text">Ocean sounds have a calming effect on the mind and body, reducing stress and anxiety
               by slowing down heart rate and breathing, creating a peaceful ambiance for relaxation.</p>
           </section>
           <!-- ---------------------------------------------------------------- -->
@@ -114,8 +114,8 @@
             <ul>
               <!-- First and Main sound -->
               <li class="w-full h-auto flex flex-row py-3 gap-2">
-                <div class="main-img-2 w-12 h-11 rounded-full bg-cover bg-center bg-no-repeat"
-                  style="background-image: url(assets/images/ocean_img.jpg);""></div>
+                <div class="w-12 h-11 rounded-full bg-cover bg-center bg-no-repeat"
+                  style="background-image: url(assets/images/ocean_img.jpg);"></div>
                 <div class=" w-full flex flex-col gap-1">
                   <p class="text-8 font-Kanit song-name">Ocean</p>
                   <input type="range" name="" id="" min="0" max="100" value="70" step="10"
@@ -159,9 +159,9 @@
 
 
   </main>
-  <section class="popup-pomodoro w-full h-full bg-gray-600/[0.5] absolute" style="display: none;">
+  <section class="popup-pomodoro w-full h-full bg-gray-600/[0.5] absolute hidden">
     <div
-      class="bg-penn-blue w-[230px] h-auto p-4 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[10px] overflow-hidden flex flex-col justify-between items-start gap-4 shadow-2xl">
+      class="bg-penn-blue w-[330px] h-auto p-12 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[30px] overflow-hidden flex flex-col justify-between items-start gap-8 shadow-2xl">
       <!-- A popup for changing pomodoro time -->
       <div class="w-full flex justify-between items-start">
         <div class="text-white font-Kanit font-bold">Choose your break time </div>
@@ -170,43 +170,24 @@
       </div>
       <div class="w-full flex justify-between items-start">
         <button onclick="changeTime(05)"
-          class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col"><span class="NEW_TIME">05</span>
-          <span class="text-[10px]">min</span>
+          class="text-[18px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-4 flex flex-col"><span class="NEW_TIME">05</span>
+          <span class="text-[13px]">min</span>
         </button>
         <button onclick="changeTime(15)"
-          class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col"><span class="NEW_TIME">15</span>
-          <span class="text-[10px]">min</span>
+          class="text-[18px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-4 flex flex-col"><span class="NEW_TIME">15</span>
+          <span class="text-[13px]">min</span>
         </button>
         <button onclick="changeTime(20)"
-          class="text-[14px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-3 flex flex-col"><span class="NEW_TIME">20</span>
-          <span class="text-[10px]">min</span>
+          class="text-[18px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-4 flex flex-col"><span class="NEW_TIME">20</span>
+          <span class="text-[13px]">min</span>
         </button>
+        <button onclick="changeTime(20)"
+        class="text-[18px] leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-4 flex flex-col"><span class="NEW_TIME">30</span>
+        <span class="text-[13px]">min</span>
+      </button>
       </div>
   </section>
   </div>
-  <script class="Pomodoro Popup">
-    function changeBreakTime() {
-      document.querySelector('.popup-pomodoro').style.display = 'block';
-    }
-    function closePopUp() {
-      document.querySelector('.popup-pomodoro').style.display = 'none';
-    }
-
-    function changeTime(n) {
-      if(n == 5){
-        document.querySelector(".BREAK_TIME_IN_MINUTE").innerHTML = '05';
-        closePopUp()
-      }
-      document.querySelector(".BREAK_TIME_IN_MINUTE").innerHTML = n;
-      closePopUp()
-    }
-    const vol = document.querySelectorAll('.volume');
-    vol.forEach((item) => {
-      item.addEventListener('change', (e) => {
-        const value = e.target.value;
-      })
-    })
-  </script>
   <script src="assets/fontawesome/js/fontawesome.js"></script>
   <script src="assets/fontawesome/js/solid.js"></script>
   <script src="assets/musiclist.js"></script>

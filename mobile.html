@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <title>BeRelax - Code5</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌻</text></svg>" />
+</head>
+
+<body class="h-screen bg-cornflower-blue text-white flex justify-center p-4 items-center box-border">
+  <main class="wrapper bg-phthalo-blue w-full h-full rounded-[4rem] py-16 flex flex-col relative overflow-hidden">
+
+    <h1 class="text-8xl leading-none text-center font-Josefin rounded-lg mb-12 mt-6">🌻 BeRelax</h1>
+
+    <div class="flex flex-row justify-between px-16">
+      <h3 class="font-Kanit text-5xl">Relax Sounds</h3>
+      <button class="inline-flex items-center text-5xl font-bold text-palatinate-blue">
+        <i class="fas fa-bars text-5xl mr-2 text-white cursor-pointer select-none" onclick="showPopUp('.musiclist')"></i>
+      </button>
+    </div>
+    <section class="h-full flex flex-row gap-8">
+
+      <div class="musiclist hidden h-full p-20 absolute w-full bottom-0 left-0 backdrop-blur-md">
+        <!-- ---------------------------------------------------------------- -->
+        <!-- List of musics -->
+        <ul id="musics" class="gap-8 h-full flex flex-col align-middle justify-between items-center ">
+          <li class="w-full flex flex-row justify-between">
+            <h3 class="font-Kanit text-5xl">Choose Sound</h3>
+            <button class="inline-flex items-center text-5xl font-bold text-palatinate-blue">
+              <i class="fas fa-xmark text-5xl mr-2 text-white cursor-pointer select-none" onclick="closePopUp('.musiclist')"></i>
+            </button>
+          </li>
+          <!-- First Element -->
+          <li class="h-auto w-[75%] relative text-center group hover:cursor-pointer mr-[8px] select-none">
+            <img src="assets/images/ocean_img.jpg" alt="ocean sounds" class="rounded-[2rem] w-full h-full" />
+            <div
+              class="w-full h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-5xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+          <!-- Second Element -->
+          <li class="h-auto w-[75%] relative text-center group hover:cursor-pointer mr-[8px]">
+            <img src="assets/images/field-min.jpg" alt="field sounds"
+              class="rounded-[2rem] w-full h-full select-none" />
+            <div
+              class="w-full rounded-[2rem] h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-5xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+          <!-- Third Element -->
+          <li class="h-auto w-[75%] relative text-center group hover:cursor-pointer mr-[8px]">
+            <img src="assets/images/jungle-min.jpg" alt="jungle sounds"
+              class="rounded-[2rem]  w-full h-auto select-none" />
+            <div
+              class="w-full rounded-[2rem] h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-5xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+          <!-- Fourth Element -->
+          <li class="h-auto w-[75%] relative text-center group hover:cursor-pointer mr-[8px]">
+            <img src="assets/images/rain.jpg" alt="rain sounds" class="rounded-[2rem] w-full select-none" />
+            <div
+              class="w-full rounded-[2rem] h-full group-hover:bg-gray-800 group-hover:bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center transition group-hover:opacity-100 ease-in-out duration-700">
+              <i class="fa-solid fa-play text-5xl opacity-0 group-hover:opacity-100 ease-in-out duration-700"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- ---------------------------------------------------------------- -->
+      <!-- Music dashboard -->
+      <div class="music-dash w-full pb-0 px-16">
+        <img src="assets/images/ocean_img.jpg" alt="cover" class="h-auto w-full rounded-[2rem] main-img my-8" />
+        <div class="flex
+           flex-row w-full h-auto">
+          <!-- Here start all controls buttons -->
+          <section class="flex flex-col w-full p-4 pb-0 gap-12">
+
+            <div class="flex flex-row items-center justify-between">
+              <h3 class="font-Kanit text-5xl">Controller</h3>
+              <i class="fas fa-gear cursor-pointer text-5xl select-none" title="Change Volume"
+                onclick="showPopUp('.vol-setting')"></i>
+            </div>
+
+            <div class="flex flex-row items-center justify-around">
+              <div class="bg-palatinate-blue rounded-full py-8 px-8"><i data-music-icon="1"
+                  class="fa-solid fa-water text-4r"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-8 px-8"><i data-music-icon="2"
+                  class="fa-solid fa-house-tsunami text-4r"></i></div>
+              <div class="bg-palatinate-blue rounded-full py-8 px-8"><i data-music-icon="3"
+                  class="fa-solid fa-wind text-4r"></i></div>
+            </div>
+
+            <div class="flex flex-row gap-16 align-middle justify-center items-center w-full">
+
+              <button class="bg-french-rose py-10 px-12 rounded-full w-auto h-auto"><i
+                  class="fa-solid fa-stop text-5xl"></i>
+              </button>
+
+              <button class="bg-cornflower-blue rounded-full py-12 px-14"><i class="fa-solid fa-play text-7xl"></i>
+              </button>
+
+              <button onclick="showPopUp('.popup-pomodoro')"
+                class="text-5xl leading-[58%] bg-palatinate-blue rounded-full font-Kanit p-10 flex flex-col"><span
+                  class="BREAK_TIME_IN_MINUTE text-justify w-full">30</span>
+                <span class="text-[2.1rem]">min</span>
+              </button>
+            </div>
+
+            <!-- code for progress bar that show time-->
+            <div class="progress-bar w-auto h-auto mt-8">
+              <p class="counter text-4xl timer mb-6">13:02 / 30:00</p>
+              <div class="w-full h-[16px] bg-penn-blue-5 rounded-full overflow-hidden">
+                <div class="w-[30%] bg-french-rose h-full rounded-full"></div>
+              </div>
+            </div>
+
+            <p class="text-4xl details-text mb-10">Ocean sounds have a calming effect on the mind and body, reducing
+              stress and anxiety
+              by slowing down heart rate and breathing, creating a peaceful ambiance for relaxation.</p>
+
+          </section>
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------------- -->
+      <!-- Sounds controls -->
+      <section
+        class="vol-setting hidden none w-full h-auto flex-col gap-16 p-16 bg-penn-blue rounded-b-3xl absolute bottom-0 left-0">
+        <div class="flex flex-row items-center justify-between">
+          <h3 class="font-Kanit text-5xl">Volume</h3>
+          <i class="fas fa-xmark cursor-pointer text-5xl text-french-rose select-none" title="Mute"
+            onclick="closePopUp('.vol-setting')"></i>
+        </div>
+        <ul class="flex flex-col gap-[4.5rem]">
+          <!-- First and Main sound -->
+          <li class="w-full h-auto flex flex-row py-3 gap-6">
+            <div class="w-[130px] h-[110px] rounded-full bg-cover bg-center bg-no-repeat"
+              style="background-image: url(assets/images/ocean_img.jpg);"></div>
+            <div class=" w-full flex flex-col gap-5">
+              <p class="text-4xl font-Kanit song-name">Ocean</p>
+              <input type="range" name="" id="range" min="0" max="100" value="70" step="10"
+                class="appearance-none bg-transparent cursor-pointer w-full volume"
+                style="background: linear-gradient(to right, hsla(221, 100%, 66%, 1) 70%, #ccc 70%);">
+            </div>
+          </li>
+          <!-- Second sound -->
+          <li class="w-full h-auto flex flex-row py-3 gap-6">
+            <div class="bg-palatinate-blue rounded-full py-9 px-9"><i class="fa-solid fa-water text-4xl icon-1"></i>
+            </div>
+            <div class="w-full flex flex-col gap-5">
+              <p class="text-4xl font-Kanit song-1">Water</p>
+              <input type="range" name="" id="range" min="0" max="100" value="70" step="10"
+                class="appearance-none bg-transparent cursor-pointer w-full volume"
+                style="background: linear-gradient(to right, hsla(221, 100%, 66%, 1) 70%, #ccc 70%);">
+            </div>
+          </li>
+          <!-- Third sound -->
+          <li class="w-full h-auto flex flex-row py-3 gap-6">
+            <div class="bg-palatinate-blue rounded-full py-9 px-9"><i
+                class="fa-solid fa-house-tsunami text-4xl icon-2"></i>
+            </div>
+            <div class="w-full flex flex-col gap-5">
+              <p class="text-4xl font-Kanit song-2">Wave</p>
+              <input type="range" id="range" min="0" max="100" value="70" step="1"
+                class="appearance-none bg-transparent cursor-pointer w-full volume"
+                style="background: linear-gradient(to right, hsla(221, 100%, 66%, 1) 70%, #ccc 70%);">
+            </div>
+          </li>
+          <!-- Fourth sound -->
+          <li class="w-full h-auto flex flex-row py-3 gap-6">
+            <div class="bg-palatinate-blue rounded-full py-9 px-9"><i class="fa-solid fa-wind text-4xl icon-3"></i>
+            </div>
+            <div class="w-full flex flex-col gap-5">
+              <p class="text-4xl font-Kanit song-3">Wind</p>
+              <input type="range" name="volume" id="range" min="0" max="100" value="70" step="10"
+                class="appearance-none bg-transparent cursor-pointer w-full volume"
+                style="background: linear-gradient(to right, hsla(221, 100%, 66%, 1) 70%, #ccc 70%);">
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <section class="popup-pomodoro w-full h-full bg-gray-600/[0.5] absolute">
+    <div
+      class="bg-penn-blue absolute w-11/12 h-auto p-12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[30px] overflow-hidden flex flex-col justify-between items-start gap-8 shadow-2xl">
+      <!-- A popup for changing pomodoro time -->
+      <div class="w-full flex justify-between items-start">
+        <div class="text-white text-6xl font-Kanit">Choose your break time </div>
+        <button class="text-6xl text-french-rose font-bold font-Kanit" onclick="closePopUp('.popup-pomodoro')"><i
+            class="fas fa-xmark"></i></button>
+      </div>
+        <button onclick="changeTime(20, '.popup-pomodoro')"
+          class="text-7xl leading-[58%] bg-palatinate-blue rounded-xl font-Kanit p-8 flex flex-col"><span
+            class="NEW_TIME">Change</span>
+        </button>
+      </div>
+  </section>
+  <script>
+    const sliderEl = document.querySelectorAll("#range")
+    console.log(sliderEl.length);
+    for (let i = 0; i < sliderEl.length; i++) {
+      sliderEl[i].addEventListener("input", (event) => {
+        const tempSliderValue = event.target.value;
+        const progress = (tempSliderValue / sliderEl[i].max) * 100;
+        console.log(progress);
+        sliderEl[i].style.background = `linear-gradient(to right, hsla(221, 100%, 66%, 1) ${progress}%, #ccc ${progress}%)`;
+      })
+    }
+  </script>
+  <script src="assets/fontawesome/js/fontawesome.js"></script>
+  <script src="assets/fontawesome/js/solid.js"></script>
+  <script src="assets/musiclist.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
